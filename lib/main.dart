@@ -15,7 +15,7 @@ Future<Post> get fetchPost async {
  if (response.statusCode == 200) {
     
    final responseJson = json.decode(response.body);
-   print(responseJson.body);
+   print(responseJson.data);
 
   } else {
     
